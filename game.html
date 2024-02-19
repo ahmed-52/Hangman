@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hangman</title>
+    <meta name="description" content="A simple hangman game">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/game.css">
+</head>
+<body>
+
+    <div id="gameOverMessage" class="hidden">
+        <h2 class="gameover">Game Over!</h2>
+        <a
+        href="index.html"
+        class="restart"
+        >Restart</a>
+    </div>
+
+    <div class="game-container">
+        <h1 class="game-title">Hangman Game</h1>
+        <img class="pole" src="media/man1.svg" alt="Hangman Pole" id="man">
+
+
+        <div class="word-container" id="word-container">
+
+
+
+
+        </div>
+
+
+        <div class="alphabet-buttons">
+            <button id="letter-a" class="letter-button" onclick="Gletter(this)">A</button>
+            <button id="letter-b" class="letter-button" onclick="Gletter(this)">B</button>
+            <button id="letter-c" class="letter-button" onclick="Gletter(this)">C</button>
+            <button id="letter-d" class="letter-button" onclick="Gletter(this)">D</button>
+            <button id="letter-e" class="letter-button" onclick="Gletter(this)">E</button>
+            <button id="letter-f" class="letter-button" onclick="Gletter(this)">F</button>
+            <button id="letter-g" class="letter-button" onclick="Gletter(this)">G</button>
+            <button id="letter-h" class="letter-button" onclick="Gletter(this)">H</button>
+            <button id="letter-i" class="letter-button" onclick="Gletter(this)">I</button>
+            <button id="letter-j" class="letter-button" onclick="Gletter(this)">J</button>
+            <button id="letter-k" class="letter-button" onclick="Gletter(this)">K</button>
+            <button id="letter-l" class="letter-button" onclick="Gletter(this)">L</button>
+            <button id="letter-m" class="letter-button" onclick="Gletter(this)">M</button>
+            <button id="letter-n" class="letter-button" onclick="Gletter(this)">N</button>
+            <button id="letter-o" class="letter-button" onclick="Gletter(this)">O</button>
+            <button id="letter-p" class="letter-button" onclick="Gletter(this)">P</button>
+            <button id="letter-q" class="letter-button" onclick="Gletter(this)">Q</button>
+            <button id="letter-r" class="letter-button" onclick="Gletter(this)">R</button>
+            <button id="letter-s" class="letter-button" onclick="Gletter(this)">S</button>
+            <button id="letter-t" class="letter-button" onclick="Gletter(this)">T</button>
+            <button id="letter-u" class="letter-button" onclick="Gletter(this)">U</button>
+            <button id="letter-v" class="letter-button" onclick="Gletter(this)">V</button>
+            <button id="letter-w" class="letter-button" onclick="Gletter(this)">W</button>
+            <button id="letter-x" class="letter-button" onclick="Gletter(this)">X</button>
+            <button id="letter-y" class="letter-button" onclick="Gletter(this)">Y</button>
+            <button id="letter-z" class="letter-button" onclick="Gletter(this)">Z</button>
+        </div>
+        
+    </div>
+
+    <script src="scripts/game.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap'); /* Roboto Mono is a monospaced font */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: #fffcf8; /* Light cream background */
+    font-family: 'Roboto', sans-serif;
+    color: #333; /* Soft black for text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container {
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+}
+
+.game-title {
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.pole {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 2rem;
+    background: none;
+}
+
+.word-container {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 15px; /* Space between underscores */
+font-size: 40pt;
+}
+
+.letter {
+/* Ensures each underscore has the same width */
+    text-align: center; /* Centers the underscore in the span if it's wider than the underscore character */
+}
+
+.alphabet-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Space between buttons */
+    margin-top: 1rem;
+}
+
+.letter-button {
+    padding: 10px;
+    background-color: #333; /* Soft black for buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.letter-button:hover {
+    background-color: #555; /* Darker on hover for interaction feedback */
+}
+
+
+
+.hidden {
+    display: none; /* Hide elements with this class */
+}
+
+
+.visible {
+    display: flex !important;/* Show elements with this class */
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+   align-items: center;
+    position: fixed; /* Fixed position */
+    top: 50%;       /* Center vertically */
+    left: 50%;      /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust the exact center */
+    background-color: black; /* Background color */
+    color: rgb(255, 255, 255);   /* Text color */
+    padding: 100%;  /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 2em; /* Large text */
+}
+
+.restart{
+    background-color:white;
+    color: black;
+    border: 2px solid #555555;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+.gameover{
+    width: 500px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 30px;
+    margin-top: 1rem;
+}

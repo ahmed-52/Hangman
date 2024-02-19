@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html {
+    height: 100%;
+    background-color: #f5f5f5; /* Light cream background */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* Robotic, geometric font */
+    color: #333; /* Soft black for text */
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    background-color: #333; /* Soft black for buttons */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #555; /* Darker on hover for interaction feedback */
+}
+
+
+
+.hidden {
+    display: none; /* Hide elements with this class */
+}
+
+
+.visible {
+    display: block !important;/* Show elements with this class */
+    position: fixed; /* Fixed position */
+    top: 50%;       /* Center vertically */
+    left: 50%;      /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust the exact center */
+    background-color: black; /* Background color */
+    color: rgb(255, 3, 3);   /* Text color */
+    padding: 20px;  /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 2em; /* Large text */
+}
